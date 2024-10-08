@@ -5,8 +5,8 @@ import "react-toastify/dist/ReactToastify.css";
 import { useParams, useNavigate } from "react-router-dom";
 
 const BookList = () => {
-  const { subject } = useParams(); 
-  const navigate = useNavigate(); 
+  const { subject } = useParams();
+  const navigate = useNavigate();
   const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -17,7 +17,11 @@ const BookList = () => {
     const fetchBooks = async () => {
       try {
         const response = await axios.get("http://localhost:3001/Booklibrary");
-        setBooks(response.data);
+        const booksWithBorrowedStatus = response.data.map((book) => ({
+          ...book,
+          borrowed: false,
+        }));
+        setBooks(booksWithBorrowedStatus);
       } catch (err) {
         setError("Failed to fetch books.");
         console.error(err);
@@ -32,13 +36,14 @@ const BookList = () => {
   if (loading) return <p>Loading...</p>;
   if (error) return <p className="text-red-500">{error}</p>;
 
-  const filteredBooks = books.filter(book => {
-    const matchesSubject = !subject || subject === "All Books" || book.subject === subject;
+  const filteredBooks = books.filter((book) => {
+    const matchesSubject =
+      !subject || subject === "All Books" || book.subject === subject;
     const matchesSearchQuery =
       book.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       book.author.toLowerCase().includes(searchQuery.toLowerCase()) ||
       book.category.toLowerCase().includes(searchQuery.toLowerCase());
-    
+
     return matchesSubject && matchesSearchQuery;
   });
 
@@ -48,12 +53,14 @@ const BookList = () => {
       [bookTitle]: !prev[bookTitle],
     }));
     toast.success(
-      `You have ${borrowedBooks[bookTitle] ? "returned" : "borrowed"} "${bookTitle}"!`
+      `You have ${
+        borrowedBooks[bookTitle] ? "returned" : "borrowed"
+      } "${bookTitle}"!`
     );
   };
 
   const handleView = (book) => {
-    navigate('/about', { state: { book } });
+    navigate("/about", { state: { book } });
   };
 
   return (

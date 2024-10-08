@@ -18,11 +18,8 @@ const BookDetails = () => {
   };
 
   const handleDelete = async () => {
-    const confirmDelete = window.confirm("Are you sure you want to delete this book?");
-    if (!confirmDelete) return;
-
     try {
-      await axios.delete(`https://your-api-url.com/books/${book.id}`);
+      await axios.delete(`http://localhost:3001/Booklibrary/${book.id}`);
       toast.success("Book deleted successfully!");
       navigate("/"); 
     } catch (error) {

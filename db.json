@@ -1,0 +1,61 @@
+{
+  "registration": [
+    {
+      "id": "fb21",
+      "name": "chintan dhameliya",
+      "email": "chintandhameliya28@gmail.com",
+      "password": "Chi@99047",
+      "confirmPassword": "Chi@99047"
+    }
+  ],
+  "Booklibrary": [
+    {
+      "id": "3929",
+      "title": "Wanderlust: Tales from the Road Less Travele",
+      "author": "Sarah J. Maas",
+      "genre": "Fantasy",
+      "isbn": "978-161963444",
+      "publicationDate": "2024-10-06",
+      "description": "As the sun dipped below the horizon, the sky transformed into a breathtaking palette of oranges and purples. The salty breeze danced through the palm trees, carrying the distant laughter of beachgoers. Soft waves lapped at the shore, creating a soothing rhythm that felt like nature’s lullaby. Strolling along the sandy beach, I stumbled upon hidden coves, where tide pools sparkled like jewels under the fading light. Each step was a reminder of the beauty and tranquility that travel brings to the soul.",
+      "subject": "Travel",
+      "category": "Classic",
+      "imageUrl": "https://media.istockphoto.com/id/511576487/photo/travel-guide-books.jpg?s=612x612&w=0&k=20&c=s-ipP_L93K7LWcP9TghJ33JPFelN0pedxerQackmqmo="
+    },
+    {
+      "title": "The authoritative Calvin and Hobbes",
+      "author": "Sarah J. Maas",
+      "genre": "Biography",
+      "isbn": "978-161963444",
+      "publicationDate": "2024-10-02",
+      "description": "The Authoritative Calvin and Hobbes\\\" is a comprehensive collection of Bill Watterson's beloved comic strips featuring the imaginative boy Calvin and his anthropomorphic tiger friend, Hobbes. Through their whimsical adventures and profound philosophical musings, the duo explores themes of childhood, friendship, and the absurdities of life. This anthology showcases the unique artistry and wit that made the series a cultural phenomenon. It’s a timeless celebration of imagination that resonates with readers of all ages.er",
+      "subject": "Biography",
+      "category": "Classic",
+      "imageUrl": "https://ia903000.us.archive.org/view_archive.php?archive=/3/items/m_covers_0008/m_covers_0008_27.zip&file=0008277118-M.jpg",
+      "id": "a5b3"
+    },
+    {
+      "id": "cf64",
+      "title": " Strategies for Modern Success",
+      "author": "Strategies for Modern Success\" by Alex Harper",
+      "genre": "Business & Entrepreneurship",
+      "isbn": "978-1-23456-789-0",
+      "publicationDate": "2024-10-29",
+      "description": "In today’s fast-paced business landscape, innovation is the key to staying ahead. In \"Innovate to Elevate,\" Alex Harper unveils actionable strategies that empower entrepreneurs and business leaders to think outside the box. Through compelling case studies and expert insights, this book provides a roadmap for harnessing creativity, fostering a culture of innovation, and driving sustainable growth. Whether you're a seasoned executive or a budding entrepreneur, you'll discover practical tools and techniques to elevate your business to new heights. Transform challenges into opportunities and learn how to thrive in an ever-changing market",
+      "subject": "Business",
+      "category": "Trending",
+      "imageUrl": "https://media.istockphoto.com/id/540526464/photo/brilliant-ideas-in-the-making.jpg?s=612x612&w=0&k=20&c=N0YpZIKuldV0LfmKeLUl_nIkQrjDWbqk8W1vaEyyOrY="
+    },
+    {
+      "title": "Ciclo del agua",
+      "author": "by Cristina Quental, Mariana Magalhães, and Sandra Serra",
+      "genre": "Science Fiction",
+      "isbn": "978-161963444",
+      "publicationDate": "2024-10-29",
+      "description": "\"Ciclo del agua\" explores the fascinating journey of water through evaporation, condensation, and precipitation. This engaging narrative highlights the vital role water plays in sustaining life and ecosystems. With vibrant illustrations and clear explanations, it invites readers to appreciate the wonders of nature’s most essential resource",
+      "subject": "Science Fiction",
+      "category": "Trending",
+      "imageUrl": "https://ia600505.us.archive.org/view_archive.php?archive=/25/items/m_covers_0010/m_covers_0010_95.zip&file=0010953095-M.jpg",
+      "id": "cd68"
+    }
+  ]
+}
